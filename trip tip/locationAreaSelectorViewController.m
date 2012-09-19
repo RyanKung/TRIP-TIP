@@ -7,6 +7,7 @@
 //
 
 #import "locationAreaSelectorViewController.h"
+#import "location.h"
 
 @interface locationAreaSelectorViewController ()
 

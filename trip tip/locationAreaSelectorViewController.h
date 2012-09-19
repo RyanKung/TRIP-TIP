@@ -10,4 +10,5 @@
 
 @interface locationAreaSelectorViewController : UITableViewController
 
+@property (nonatomic, strong) NSArray *areaList;
 @end
