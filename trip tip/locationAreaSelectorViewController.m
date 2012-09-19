@@ -1,19 +1,18 @@
 //
-//  locationSelectorTableViewController.m
+//  locationAreaSelectorViewController.m
 //  trip tip
 //
-//  Created by Ryan Kung on 11/9/12.
+//  Created by Ryan Kung on 19/9/12.
 //  Copyright (c) 2012 Douban Inc. All rights reserved.
 //
 
-#import "locationSelectorTableViewController.h"
-#import "Location.h"
-#import "AppDelegate.h"
+#import "locationAreaSelectorViewController.h"
 
-@implementation locationSelectorTableViewController
-@synthesize managedObjectContext;
-@synthesize location;
+@interface locationAreaSelectorViewController ()
 
+@end
+
+@implementation locationAreaSelectorViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -27,23 +26,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    if (managedObjectContext == nil) 
-    { 
-        managedObjectContext = [(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext]; 
-        NSLog(@"After managedObjectContext: %@",  managedObjectContext);
-    }
-    
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription
-                                   entityForName:@"Location" inManagedObjectContext:managedObjectContext];    
-    [fetchRequest setEntity:entity];
-    NSError *error;
-    self.location = [managedObjectContext executeFetchRequest:fetchRequest error:&error];
-    self.title = @"Failed";
+
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+ 
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-
-
 
 - (void)viewDidUnload
 {
@@ -61,14 +50,16 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [location count];
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -76,15 +67,8 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    Location *info = [location objectAtIndex:indexPath.row];
+    // Configure the cell...
     
-    cell.textLabel.text = info.country;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@, %@",
-                                 info.city, info.country];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    }
     return cell;
 }
 

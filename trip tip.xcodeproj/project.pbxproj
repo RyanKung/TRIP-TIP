@@ -10,7 +10,7 @@
 		944748C915FE371A0036BC46 /* small-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 944748C815FE371A0036BC46 /* small-icon.png */; };
 		944748CB15FE37210036BC46 /* large-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 944748CA15FE37210036BC46 /* large-icon.png */; };
 		944748CF15FE3E440036BC46 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 944748CE15FE3E440036BC46 /* Location.m */; };
-		944748D515FE481D0036BC46 /* locationSelectorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 944748D415FE481D0036BC46 /* locationSelectorTableViewController.m */; };
+		9461B3F3160A0130004DDC4F /* locationAreaSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9461B3F2160A0130004DDC4F /* locationAreaSelectorViewController.m */; };
 		94C103CB15FE2D1F007D3913 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C103CA15FE2D1F007D3913 /* UIKit.framework */; };
 		94C103CD15FE2D1F007D3913 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C103CC15FE2D1F007D3913 /* Foundation.framework */; };
 		94C103CF15FE2D1F007D3913 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C103CE15FE2D1F007D3913 /* CoreGraphics.framework */; };
@@ -118,8 +118,8 @@
 		944748CA15FE37210036BC46 /* large-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "large-icon.png"; path = "../large-icon.png"; sourceTree = "<group>"; };
 		944748CD15FE3E440036BC46 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		944748CE15FE3E440036BC46 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
-		944748D315FE481D0036BC46 /* locationSelectorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = locationSelectorTableViewController.h; path = ../locationSelectorTableViewController.h; sourceTree = "<group>"; };
-		944748D415FE481D0036BC46 /* locationSelectorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = locationSelectorTableViewController.m; path = ../locationSelectorTableViewController.m; sourceTree = "<group>"; };
+		9461B3F1160A0130004DDC4F /* locationAreaSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = locationAreaSelectorViewController.h; sourceTree = "<group>"; };
+		9461B3F2160A0130004DDC4F /* locationAreaSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = locationAreaSelectorViewController.m; sourceTree = "<group>"; };
 		94C103C615FE2D1F007D3913 /* trip tip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trip tip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C103CA15FE2D1F007D3913 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		94C103CC15FE2D1F007D3913 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -397,8 +397,8 @@
 				94C1043415FE2EEF007D3913 /* footprintViewController.m */,
 				94C1043515FE2EEF007D3913 /* mainTabViewController.h */,
 				94C1043615FE2EEF007D3913 /* mainTabViewController.m */,
-				944748D315FE481D0036BC46 /* locationSelectorTableViewController.h */,
-				944748D415FE481D0036BC46 /* locationSelectorTableViewController.m */,
+				9461B3F1160A0130004DDC4F /* locationAreaSelectorViewController.h */,
+				9461B3F2160A0130004DDC4F /* locationAreaSelectorViewController.m */,
 			);
 			name = viewController;
 			sourceTree = "<group>";
@@ -580,7 +580,7 @@
 				94C103DD15FE2D20007D3913 /* AppDelegate.m in Sources */,
 				94C103E015FE2D20007D3913 /* trip_tip.xcdatamodeld in Sources */,
 				944748CF15FE3E440036BC46 /* Location.m in Sources */,
-				944748D515FE481D0036BC46 /* locationSelectorTableViewController.m in Sources */,
+				9461B3F3160A0130004DDC4F /* locationAreaSelectorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
